@@ -507,7 +507,7 @@ h2, h3{
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
     .halfdivform,.hero-text,.hero-text1,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
         width: 90%;
     }

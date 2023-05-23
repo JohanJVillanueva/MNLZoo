@@ -1,3 +1,5 @@
+
+
 function topFunction() {
     window.scrollTo(0, 0);
   }
@@ -92,7 +94,8 @@ function playEle() {
     }
   }
 
-  function validateForm() {
+
+function validateForm() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var province = document.getElementById("province").value;
@@ -114,45 +117,53 @@ function playEle() {
     }
     }
     
-    var radioButton = document.getElementById("status1");
-    if (radioButton.checked) {
-      alert("Student Discount");
-      console.log("Hello")
+
+
+// Check if the terms and conditions are agreed to
+    if (document.forms[0].elements["location"].checked) {
+         price = 150;
+         var radioButton = document.getElementById("status1");
+         if (radioButton.checked) {
+           price=100;
+         }
     }
+    else{
+      price = 300;
+        var radioButton = document.getElementById("status1");
+        if (radioButton.checked) {
+          price=200;
+        }
+    }
+
+
 
     var radioButton = document.getElementById("status2");
     if (radioButton.checked) {
-      alert("PWD Discount");
-      console.log("Hello")
+
+      price = price - (price*0.20)
     }
 
     var radioButton = document.getElementById("status3");
     if (radioButton.checked) {
-      alert("LGU Discount");
-      console.log("Hello")
+
+      price = 100;
     }
 
     var radioButton = document.getElementById("status4");
     if (radioButton.checked) {
-      alert("Senior Dicount");
-      console.log("Hello")
+
+      price = price - (price*0.20)
     }
 
-    // Check if the terms and conditions are agreed to
+   // Check if the terms and conditions are agreed to
     if (!document.forms[0].elements["terms_and_conditions"].checked) {
     alert("You must agree to the terms and conditions to register!");
     return false;
     }
     
-    return true;
+    save(price);
+
 
 
   }
 
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }

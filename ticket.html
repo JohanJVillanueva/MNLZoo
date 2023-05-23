@@ -12,6 +12,8 @@
                 
                     
   <script src="functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/file-saver.js/2.0.5/FileSaver.min.js"></script>
+  
   <title>Manila Zoo</title>
 </head>
 
@@ -44,8 +46,8 @@
     </div>
 
     <div class="halfdivform">
-        <div class="contact-form">
-          <form action="" method="post" onsubmit="return validateForm()">
+        <div class="contact-form">  
+          <form method="post" onsubmit="return validateForm()">
             <h1>Buy Tickets</h1>
             <div class="row">
               <div class="col-md-6">
@@ -120,10 +122,10 @@
                 <input type="radio" id="status2" name="status" value="pwd">I am a PWD<br>
                 <input type="radio" id="status3" name="status" value="manila_lgu_employee">I am a Manila LGU Employee/Teacher of Manila <br>
                 <input type="radio" id="status4" name="status" value="senior_citizen">I am Senior Citizen (Must be 60 years old up)  <br>
-                
+                <input type="checkbox" id="status5" name="location" value="manilac">From Manila <br>
                 <input type="checkbox" name="terms_and_conditions" required> I agree with the terms and conditions <br>
                 
-                <input type="submit" value="Submit">
+                <input type="submit" onclick="validateForm()" value="Submit">
                 
                 </form>
             </div>
@@ -168,8 +170,11 @@
 
 
 
+
 </div>
 
 </body>
+
+
 
 </html>
