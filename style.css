@@ -158,6 +158,16 @@ li a:hover {
     width: 40%;
 }
 
+.hero-text1{
+    float: right;
+    font-size: larger;
+    color: white;                                        
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+    width: 50%;
+}
+
 
 
 .buttonhero {
@@ -370,7 +380,7 @@ h2, h3{
 }
 
 @media only screen and (max-width: 1024px) {
-    .hero-text,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
+    .hero-text,.hero-text1,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
         width: 90%;
     }
     .underfooter{
@@ -387,9 +397,35 @@ h2, h3{
     .hero-left { 
         display: none; 
       } 
-
+    #h1g{
+        margin-left: -60px;
+    }
+    #p1g{
+        margin-left: -50px;
+    }
+    #b1{
+        margin-left: -50px;
+    }
 }
 
 
 
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+tr:nth-child(odd) {
+    background-color: #d6d6d6;
+  }
