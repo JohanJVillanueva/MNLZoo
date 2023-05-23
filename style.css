@@ -271,6 +271,18 @@ li a:hover {
     overflow: hidden;
 }
 
+.halfdivform{
+    color: rgb(82, 58, 58);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 45%;
+    margin: 10px;
+    background-color: rgb(222, 205, 143);
+    overflow: hidden;
+}
+
 h2, h3{
     font-family: 'Rampung', sans-serif;
 }
@@ -380,7 +392,7 @@ h2, h3{
 }
 
 @media only screen and (max-width: 1024px) {
-    .hero-text,.hero-text1,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
+    .halfdivform,.hero-text,.hero-text1,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
         width: 90%;
     }
     .underfooter{
@@ -428,4 +440,51 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
     background-color: #d6d6d6;
+  }
+
+  .contact-form {
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .contact-form input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .contact-form button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .contact-form {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      width: 100%;
+      float: none;
+    }
   }

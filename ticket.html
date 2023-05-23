@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.cdnfonts.com/css/rohto-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/go-baaa-handwritten-comic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/makositrial" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/rampung" rel="stylesheet">
+                
+                    
+  <script src="functions.js"></script>
+  <title>Manila Zoo</title>
+</head>
+
+<body>
+    <div class="main">
+            <button onclick="topFunction()" class="top" >Scroll to Top</button>
+        <div>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="mnlzoo.png" width="90px" id="logo" alt="Logo"></a></li>
+            <div class="menu">
+                <li><a href="guidelines.html"><h3>Guidelines</h3></a></li>
+                <li><a href=""><h3>Tickets</h3></a></li>
+                <li><a href=""><h3>Animals</h3></a></li>
+                <li><a href=""><h3>Plants</h3></a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="hero-image" style="height: 600px;">
+        <div class="hero-left" style="width: 50%;">
+            <img class="hero-left-image1" src="hero2.png" style="width: 90%;margin-left: 20px;margin-top: 110px;border-radius: 30px;">
+        </div>
+        <div class="hero-text1">
+            <h1 id="h1g" class="hero-font" style="margin-top: 140px;font-size: 80px">Tickets</h1>
+            <p  id="p1g" class="hero-font" style="margin-top: -40px;font-size: 30px">
+    Book your appointment now!</p>
+            <button id="b2" onClick="document.getElementById('map').scrollIntoView()" class="buttonhero">Map</button>
+            <br><br><br>
+        </div>
+    </div>
+
+    <div class="halfdivform">
+        <div class="contact-form">
+          <form action="" method="post" onsubmit="return validateForm()">
+            <h1>Buy Tickets</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>First Name:</h2>
+                <input type="text" id="firstName" placeholder="First Name" required>
+              </div>
+              <div class="col-md-6">
+                <h2>Last Name:</h2>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Mobile Number:</h2>
+                <input type="text" name="mobile_number" placeholder="Mobile Number" required>
+              </div>
+              <div class="col-md-6">
+                <h2>Email Number:</h2>
+                <input type="email" name="email_address" placeholder="Email Address" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Sex:</h2>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+              </div>
+              <div class="col-md-6">
+                <h2>Age:</h2>
+                <input type="number" name="age" placeholder="Age" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Region:</h2>
+                <select name="region">
+                  <option value="">Select Region</option>
+                  <option value="NCR">NCR</option>
+                  <option value="Region 1">Region 1</option>
+                  <option value="Region 2">Region 2</option>
+                  <option value="Region 3">Region 3</option>
+                  <option value="Region 4A">Region 4A</option>
+                  <option value="Region 4B">Region 4B</option>
+                  <option value="Region 5">Region 5</option>
+                  <option value="Region 6">Region 6</option>
+                  <option value="Region 7">Region 7</option>
+                  <option value="Region 8">Region 8</option>
+                  <option value="Region 9">Region 9</option>
+                  <option value="Region 10">Region 10</option>
+                  <option value="Region 11">Region 11</option>
+                  <option value="Region 12">Region 12</option>
+                  <option value="CAR">CAR</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <h2>Province:</h2>
+                <input type="text" id="province" name="province" placeholder="Province" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Municipality:</h2>
+                <input type="text" name="municipality" placeholder="Municipality" required>
+              </div>
+              <div class="col-md-6">
+                <h2>Barangay:</h2>
+                <input type="text" name="barangay" placeholder="Barangay" required>
+              </div>
+            </div>
+            
+                <input type="radio" id="status1" name="status" value="student">I am a student <br> 
+                <input type="radio" id="status2" name="status" value="pwd">I am a PWD<br>
+                <input type="radio" id="status3" name="status" value="manila_lgu_employee">I am a Manila LGU Employee/Teacher of Manila <br>
+                <input type="radio" id="status4" name="status" value="senior_citizen">I am Senior Citizen (Must be 60 years old up)  <br>
+                
+                <input type="checkbox" name="terms_and_conditions" required> I agree with the terms and conditions <br>
+                
+                <input type="submit" value="Submit">
+                
+                </form>
+            </div>
+    </div>
+
+        <div class="halfdiv">
+            <img src="form.PNG" width="100%">
+        </div>        
+
+      
+
+
+<div class="underfooter">
+    <div class="grid-container">
+        <div class="grid-item"><h3>Quick Links</h3></div>
+        <div class="grid-item"><h3>Other Pages</h3></div>
+        <div class="grid-item"><h3>Contact Info</h3></div>  
+        <div class="grid-item"><a href="index.html"> Home</a></div>
+        <div class="grid-item"><a href="toc.html"> Terms</a></div>
+        <div class="grid-item">Malate Manila</div>  
+        <div class="grid-item"><a href="About.html"> About Us</a></div>
+        <div class="grid-item"><a href="Guidelines.html"> Guidelines</a></div>
+        <div class="grid-item">manilazoomanilagovph</div>  
+        <div class="grid-item"><a href="Animals.html"> Animals</a></div>
+        <div class="grid-item"><a href="FAQ.html"> FAQ </a></div>
+        <div class="grid-item">MNL Zoo Ph</div>  
+        <div class="grid-item"><a href="plants.html"> Plants</a></div>
+        <div class="grid-item"><a href="Contact.html"> Contact Us</a></div>
+        <div class="grid-item">Manila Zoo Official</div>  
+      </div>
+      <br><br>
+</div>
+
+
+
+    <div id="footer">
+        <marquee>
+            <p class="hero-font" style="color: white;"> The Zoo is Open Today! Book an Appointment Now! | Manila Zoo: Website Project | A Midterm Project by Villanueva Sevilla Meria Agarin</p>
+        </marquee>
+    </div>
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>
