@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/rohto-sans');
 @import url('https://fonts.cdnfonts.com/css/go-baaa-handwritten-comic');
-@import url('https://fonts.cdnfonts.com/css/quiapo-free');
 @import url('https://fonts.cdnfonts.com/css/makositrial');
+@import url('https://fonts.cdnfonts.com/css/rampung');
 /*font-family: 'Go Baaa Handwritten Comic', sans-serif;*/
 
 
@@ -14,9 +14,10 @@
 }
 
 ul {
+    z-index: 1;
     list-style-type: none;
     margin: 0px;
-    margin-left: -9px;
+    margin-left: -9.2px;
     padding: 0;
     overflow: hidden;
     position: fixed;
@@ -51,10 +52,11 @@ li a:hover {
 }
 
 .menu {
-    font-family: 'Quiapo Free', sans-serif;
-    font-size: 25px;
+    font-family: 'Rampung', sans-serif;
+                                                
+    font-size: 20px;
     float:right;
-    z-index: 1;
+
 }
 
 .top {
@@ -79,30 +81,45 @@ li a:hover {
     cursor: pointer;
   }
 
+.hero-left{
+    width: 60%;
+    float: left;
+
+}  
+
+.hero-left-image{
+    margin-top:100px;
+    width: 120%;
+}
 .hero-image {
     background-image: url("hero1b.png");
-    margin-top: 45px;
     border-radius: 30px;
+    padding: 0;
+    margin: 0;
     height: 600px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
   }
+
+
 .hero-text{
+    float: right;
     font-size: larger;
     color: white;                                        
     margin: auto;
+    padding-top: 60px;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 
 
 .buttonhero {
-    font-family: 'Quiapo Free', sans-serif;
-                                                
+    font-family: 'Rampung', sans-serif;                                              
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
