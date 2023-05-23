@@ -71,9 +71,11 @@ li a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 1;
   }
 
 .bgm {
+    z-index: 1;
     position: fixed;
     bottom: 100px;
     right: 10px;
@@ -157,19 +159,21 @@ li a:hover {
   }
 
   .main {
-    position: relative;    
+    position: relative;
     }
     
-.child {    
-    z-index: -1;
-    position: absolute;    
-    top: 100%;    
-    left: 0;
-    }
+
+.child {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
 
 .bgdown{
     width: 100%;
-    opacity: 0.5;
+     opacity: 0.5;
+     overflow: hidden;
 
 }
 
@@ -199,4 +203,104 @@ li a:hover {
 
 h2, h3{
     font-family: 'Rampung', sans-serif;
+}
+
+
+/*image hover*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column img {
+    vertical-align: middle;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+  }
+
+  .container:hover .overlay {
+    opacity: 0.5;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  
+.underfooter{
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 208, 141);
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  
+  .grid-item {
+    font-size: 20px;
+    text-align: center
+  }
+
+
+  /* Tablet Styles */
+@media only screen and (min-width: 480px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+ 
+ 
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    .column {
+      flex: 33.3%;
+      max-width: 33.3%;
+    }
 }
