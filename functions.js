@@ -20,6 +20,77 @@ function playEle() {
     }
   }
 
+  function playLio() {
+    var audio = document.getElementById("lion");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playMon() {
+    var audio = document.getElementById("monkey");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playDee() {
+    var audio = document.getElementById("deer");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playEag() {
+    var audio = document.getElementById("eagle");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playPea() {
+    var audio = document.getElementById("peacock");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playMac() {
+    var audio = document.getElementById("macaw");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playDov() {
+    var audio = document.getElementById("dove");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function playPyt() {
+    var audio = document.getElementById("python");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
 
   function validateForm() {
     var firstName = document.getElementById("firstName").value;

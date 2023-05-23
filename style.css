@@ -253,6 +253,78 @@ li a:hover {
     overflow: hidden;
 }
 
+.birdiv{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(204, 52, 52);
+    overflow: hidden;
+}
+
+.birdpic{
+
+}
+
+.birdassets{
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.aquadiv{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(204, 52, 52);
+    overflow: hidden;
+}
+
+.aquapic{
+
+}
+
+.aquaassets{
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.repdiv{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(204, 52, 52);
+    overflow: hidden;
+}
+
+.reppic{
+
+}
+
+.repassets{
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
 
 
 
