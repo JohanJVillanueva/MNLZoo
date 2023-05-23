@@ -13,4 +13,7 @@ function play() {
 
 
 
-/*slide*/
+/*fade*/
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+}
