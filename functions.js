@@ -11,6 +11,15 @@ function play() {
     }
   }
 
+function playEle() {
+    var audio = document.getElementById("elephant");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
 
   function validateForm() {
     var firstName = document.getElementById("firstName").value;

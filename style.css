@@ -231,6 +231,30 @@ li a:hover {
     overflow: hidden;
 }
 
+.animaldiv{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(204, 52, 52);
+    overflow: hidden;
+}
+
+.animalpic{
+
+}
+
+.animalassets{
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
 
 
 .halfdiv{
