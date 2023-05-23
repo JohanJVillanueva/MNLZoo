@@ -324,7 +324,27 @@ li a:hover {
 }
 
 
+.plantdiv{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'MAKOSItrial', sans-serif;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(10, 78, 1);
+    overflow: hidden;
+}
 
+.plantpic{
+
+}
+
+.plantassets{
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
 
 
 
@@ -491,6 +511,9 @@ h2, h3{
     .halfdivform,.hero-text,.hero-text1,.halfdiv,.halfdivleft,.halfdivyt,.wholediv,.underfooter{
         width: 90%;
     }
+    .aquadiv,.repdiv,.birdiv,.animaldiv,.plantdiv{
+        width: 40%;
+    }
     .underfooter{
         margin-left: 5px;
     }
@@ -498,6 +521,12 @@ h2, h3{
         font-size: small;
     }
 
+}
+
+@media only screen and (max-width: 700px) {
+    .aquadiv,.repdiv,.birdiv,.animaldiv,.plantdiv{
+        width: 90%;
+    }
 }
 
 
@@ -517,7 +546,11 @@ h2, h3{
 }
 
 
+.faq{
+    
 
+    color: white;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -526,16 +559,16 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #326208;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #9dca93;
 }
 tr:nth-child(odd) {
-    background-color: #d6d6d6;
+    background-color: #58805e;
   }
 
   .contact-form {
